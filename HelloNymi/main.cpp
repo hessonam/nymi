@@ -7,6 +7,8 @@
 bool gNclInitialized=false;
 int gHandle=-1;
 int validatedUser=-1;
+int distance=0;
+int locked=0;
 std::vector<NclProvision> gProvisions;
 
 void callback(NclEvent event, void* userData){
@@ -106,6 +108,16 @@ int main(int argc, const char* argv[]){
                 std::cout<<"log: unlocking\n";
                 ///AMER PLS
             }
+            int i;
+            distance=0;
+            for(i=0; i<10; i++){
+            	///get distance
+            }
+            distance=distance/10;
+            if(locked){
+
+            }
+            else
         }
     }
     if(gHandle!=-1) nclDisconnect(gHandle);
