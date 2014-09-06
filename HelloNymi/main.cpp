@@ -6,6 +6,7 @@
 
 bool gNclInitialized = false;
 int gHandle = -1;
+int validatedUser = -1;
 int numAverages = 0;
 int rssi = -50;
 int rssi_cumulative = 0;
@@ -54,7 +55,7 @@ void callback(NclEvent event, void* userData){
 		break;
 	case NCL_EVENT_VALIDATION:
 		std::cout << "Nymi validated! Now trusted user stuff can happen.\n";
-		goto doge;
+		validatedUser = gHandle;
 		break;
 	case NCL_EVENT_RSSI:
 		numAverages++;
@@ -78,7 +79,7 @@ int main(int argc, const char* argv[]){
 	std::cout << "Enter \"quit\" to quit.\n";
 	while (true){
 		std::string input;
-		if (gHandle == -1){
+		if (gHandle == -1 || gHandle != validatedUser){
 			std::cin >> input;
 			// command line interface
 			if (!gNclInitialized){
@@ -100,6 +101,7 @@ int main(int argc, const char* argv[]){
 			else if (input == "validate"){
 				std::cout << "log: starting finding\n";
 				nclStartFinding(gProvisions.data(), gProvisions.size(), NCL_FALSE);
+				system("taskkill /IM NymiSplash.exe > nul");
 			}
 			else if (input == "disconnect"){
 				std::cout << "log: disconnecting\n";
@@ -120,7 +122,7 @@ int main(int argc, const char* argv[]){
 			///unlock
 			}
 			*/
-			doge: int i;
+			int i;
 			//distance = 0;
 			for (i = 0; i<10; i++){
 				nclGetRssi(gHandle);
@@ -130,7 +132,7 @@ int main(int argc, const char* argv[]){
 				if (rssi>-30){
 					locked = 0;
 					std::cout << "log: unlocking\n";
-					system("taskkill /IM NymiSplash.exe");
+					system("taskkill /IM NymiSplash.exe > nul");
 					///unlock
 				}
 			}
@@ -138,7 +140,6 @@ int main(int argc, const char* argv[]){
 				if (rssi<-70){
 					locked = 1;
 					std::cout << "log: locking\n";
-					//int a = system("start \"C:\\Users\\Owner\\Documents\\GitHub\\nymi\\NymiSplash.exe\" &");
 					const char *args[2];
 					args[0] = "C:\\Users\\Owner\\Documents\\GitHub\\nymi\\NymiSplash.exe";
 					args[1] = NULL;
@@ -153,4 +154,3 @@ int main(int argc, const char* argv[]){
 	nclFinish();
 	return 0;
 }
-
