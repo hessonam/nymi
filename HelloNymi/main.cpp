@@ -6,7 +6,6 @@
 
 bool gNclInitialized = false;
 int gHandle = -1;
-int validatedUser = -1;
 int numAverages = 0;
 int rssi = -50;
 int rssi_cumulative = 0;
@@ -55,7 +54,7 @@ void callback(NclEvent event, void* userData){
 		break;
 	case NCL_EVENT_VALIDATION:
 		std::cout << "Nymi validated! Now trusted user stuff can happen.\n";
-		validatedUser = gHandle;
+		goto doge;
 		break;
 	case NCL_EVENT_RSSI:
 		numAverages++;
@@ -79,7 +78,7 @@ int main(int argc, const char* argv[]){
 	std::cout << "Enter \"quit\" to quit.\n";
 	while (true){
 		std::string input;
-		if (gHandle == -1 || gHandle != validatedUser){
+		if (gHandle == -1){
 			std::cin >> input;
 			// command line interface
 			if (!gNclInitialized){
@@ -121,7 +120,7 @@ int main(int argc, const char* argv[]){
 			///unlock
 			}
 			*/
-			int i;
+			doge: int i;
 			//distance = 0;
 			for (i = 0; i<10; i++){
 				nclGetRssi(gHandle);
