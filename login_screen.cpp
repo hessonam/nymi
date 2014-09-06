@@ -1,4 +1,4 @@
-// include the basic windows header files and the Direct3D header file
+// include the basic windows header files
 #include <windows.h>
 #include <windowsx.h>
 
@@ -44,9 +44,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
     ShowWindow(hWnd, nCmdShow);
 
-    // set up and initialize Direct3D
-    initD3D(hWnd);
-
     // enter the main loop:
 
     MSG msg;
@@ -64,9 +61,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
         render_frame();
     }
-
-    // clean up DirectX and COM
-    cleanD3D();
 
     return msg.wParam;
 }
