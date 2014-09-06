@@ -98,7 +98,7 @@ int main(int argc, const char* argv[]){
 		}
 		else if(input=="unlock"){
 			if(gHandle!=-1 && gHandle==validatedUser){
-				std::cout<<"log: locking\n";
+				std::cout<<"log: unlocking\n";
 				///AMER PLS
 			}
 			else{
