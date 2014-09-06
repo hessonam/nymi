@@ -17,6 +17,7 @@ BOOL				InitInstance(HINSTANCE, int);
 LRESULT CALLBACK	WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK	About(HWND, UINT, WPARAM, LPARAM);
 
+HWND CreateFullscreenWindow(HWND hwnd);
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPTSTR    lpCmdLine,
@@ -106,9 +107,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    {
       return FALSE;
    }
-   CreateFullscreenWindow(hwnd)
-   ShowWindow(hWnd, nCmdShow);
-   UpdateWindow(hWnd);
+   CreateFullscreenWindow(hWnd);
+   //ShowWindow(hWnd, nCmdShow);
+   //UpdateWindow(hWnd);
 
    return TRUE;
 }
@@ -188,11 +189,11 @@ HWND CreateFullscreenWindow(HWND hwnd)
 	MONITORINFO mi = { sizeof(mi) };
 	if (!GetMonitorInfo(hmon, &mi)) return NULL;
 	return CreateWindow(TEXT("static"),
-		TEXT("something interesting might go here"),
+		TEXT(""),
 		WS_POPUP | WS_VISIBLE,
 		mi.rcMonitor.left,
 		mi.rcMonitor.top,
 		mi.rcMonitor.right - mi.rcMonitor.left,
 		mi.rcMonitor.bottom - mi.rcMonitor.top,
-		hwnd, NULL, g_hinst, 0);
+		hwnd, NULL, hInst, 0);
 }
