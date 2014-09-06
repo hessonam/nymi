@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C544B33-C945-4D0A-A357-516F74E57DF9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloNymi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6742F20E-42F2-4685-BC34-C7EF05616604</key>
+		<string>http://pm.corp.bionym.com/stash/scm/nf/nymi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sdk/Tutorials/HelloNymi/XcodeMac/HelloNymi.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6742F20E-42F2-4685-BC34-C7EF05616604</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://pm.corp.bionym.com/stash/scm/nf/nymi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6742F20E-42F2-4685-BC34-C7EF05616604</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6742F20E-42F2-4685-BC34-C7EF05616604</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nymi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

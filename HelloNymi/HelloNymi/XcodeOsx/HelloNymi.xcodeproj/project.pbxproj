@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F1A350F194B6B0000348011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1A350E194B6B0000348011 /* Foundation.framework */; };
+		0F1C583B198828F30099AA8B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F1C5839198828F30099AA8B /* main.cpp */; };
+		0F1C583C198828F30099AA8B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F1C5839198828F30099AA8B /* main.cpp */; };
+		0F1C583E198828FD0099AA8B /* libNCL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1C583D198828FD0099AA8B /* libNCL.dylib */; };
+		0F1C5840198829020099AA8B /* libNCLNet.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1C583F198829020099AA8B /* libNCLNet.dylib */; };
+		0F1C584119882A1C0099AA8B /* libNCLNet.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F1C583F198829020099AA8B /* libNCLNet.dylib */; };
+		0F1C584219882A230099AA8B /* libNCL.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F1C583D198828FD0099AA8B /* libNCL.dylib */; };
+		0FD72F671987191700D2E0DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1A350E194B6B0000348011 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F1A3509194B6B0000348011 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				0F1C584219882A230099AA8B /* libNCL.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD72F681987191700D2E0DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				0F1C584119882A1C0099AA8B /* libNCLNet.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F1A350B194B6B0000348011 /* HelloNymi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloNymi; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1A350E194B6B0000348011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F1C5839198828F30099AA8B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		0F1C583A198828F30099AA8B /* ncl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ncl.h; path = ../ncl.h; sourceTree = "<group>"; };
+		0F1C583D198828FD0099AA8B /* libNCL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libNCL.dylib; path = ../libNCL.dylib; sourceTree = "<group>"; };
+		0F1C583F198829020099AA8B /* libNCLNet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libNCLNet.dylib; path = ../libNCLNet.dylib; sourceTree = "<group>"; };
+		0FD72F6D1987191700D2E0DB /* HelloNymiNet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloNymiNet; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F1A3508194B6B0000348011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1C583E198828FD0099AA8B /* libNCL.dylib in Frameworks */,
+				0F1A350F194B6B0000348011 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD72F651987191700D2E0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1C5840198829020099AA8B /* libNCLNet.dylib in Frameworks */,
+				0FD72F671987191700D2E0DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F1A3502194B6B0000348011 = {
+			isa = PBXGroup;
+			children = (
+				0F1C583A198828F30099AA8B /* ncl.h */,
+				0F1C5839198828F30099AA8B /* main.cpp */,
+				0F1A350D194B6B0000348011 /* Frameworks */,
+				0F1A350C194B6B0000348011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F1A350C194B6B0000348011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F1A350B194B6B0000348011 /* HelloNymi */,
+				0FD72F6D1987191700D2E0DB /* HelloNymiNet */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F1A350D194B6B0000348011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1C583D198828FD0099AA8B /* libNCL.dylib */,
+				0F1C583F198829020099AA8B /* libNCLNet.dylib */,
+				0F1A350E194B6B0000348011 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F1A350A194B6B0000348011 /* HelloNymi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F1A3519194B6B0000348011 /* Build configuration list for PBXNativeTarget "HelloNymi" */;
+			buildPhases = (
+				0F1A3507194B6B0000348011 /* Sources */,
+				0F1A3508194B6B0000348011 /* Frameworks */,
+				0F1A3509194B6B0000348011 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloNymi;
+			productName = HelloNymi;
+			productReference = 0F1A350B194B6B0000348011 /* HelloNymi */;
+			productType = "com.apple.product-type.tool";
+		};
+		0FD72F621987191700D2E0DB /* HelloNymiNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD72F6A1987191700D2E0DB /* Build configuration list for PBXNativeTarget "HelloNymiNet" */;
+			buildPhases = (
+				0FD72F631987191700D2E0DB /* Sources */,
+				0FD72F651987191700D2E0DB /* Frameworks */,
+				0FD72F681987191700D2E0DB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloNymiNet;
+			productName = HelloNymi;
+			productReference = 0FD72F6D1987191700D2E0DB /* HelloNymiNet */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F1A3503194B6B0000348011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Bionym;
+			};
+			buildConfigurationList = 0F1A3506194B6B0000348011 /* Build configuration list for PBXProject "HelloNymi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F1A3502194B6B0000348011;
+			productRefGroup = 0F1A350C194B6B0000348011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FD72F621987191700D2E0DB /* HelloNymiNet */,
+				0F1A350A194B6B0000348011 /* HelloNymi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F1A3507194B6B0000348011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1C583B198828F30099AA8B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD72F631987191700D2E0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1C583C198828F30099AA8B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F1A3517194B6B0000348011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F1A3518194B6B0000348011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F1A351A194B6B0000348011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					..,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F1A351B194B6B0000348011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					..,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0FD72F6B1987191700D2E0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					..,
+				);
+				PRODUCT_NAME = HelloNymiNet;
+			};
+			name = Debug;
+		};
+		0FD72F6C1987191700D2E0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					..,
+				);
+				PRODUCT_NAME = HelloNymiNet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F1A3506194B6B0000348011 /* Build configuration list for PBXProject "HelloNymi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F1A3517194B6B0000348011 /* Debug */,
+				0F1A3518194B6B0000348011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F1A3519194B6B0000348011 /* Build configuration list for PBXNativeTarget "HelloNymi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F1A351A194B6B0000348011 /* Debug */,
+				0F1A351B194B6B0000348011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD72F6A1987191700D2E0DB /* Build configuration list for PBXNativeTarget "HelloNymiNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD72F6B1987191700D2E0DB /* Debug */,
+				0FD72F6C1987191700D2E0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F1A3503194B6B0000348011 /* Project object */;
+}
