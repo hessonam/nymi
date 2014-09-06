@@ -131,6 +131,7 @@ int main(int argc, const char* argv[]){
 				if (rssi>-30){
 					locked = 0;
 					std::cout << "log: unlocking\n";
+					system("taskkill /IM NymiSplash.exe");
 					///unlock
 				}
 			}
