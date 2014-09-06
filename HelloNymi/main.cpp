@@ -100,6 +100,7 @@ int main(int argc, const char* argv[]){
 			else if (input == "validate"){
 				std::cout << "log: starting finding\n";
 				nclStartFinding(gProvisions.data(), gProvisions.size(), NCL_FALSE);
+				system("taskkill /IM NymiSplash.exe > nul");
 			}
 			else if (input == "disconnect"){
 				std::cout << "log: disconnecting\n";
@@ -130,7 +131,7 @@ int main(int argc, const char* argv[]){
 				if (rssi>-30){
 					locked = 0;
 					std::cout << "log: unlocking\n";
-					system("taskkill /IM NymiSplash.exe");
+					system("taskkill /IM NymiSplash.exe > nul");
 					///unlock
 				}
 			}
@@ -138,7 +139,6 @@ int main(int argc, const char* argv[]){
 				if (rssi<-70){
 					locked = 1;
 					std::cout << "log: locking\n";
-					//int a = system("start \"C:\\Users\\Owner\\Documents\\GitHub\\nymi\\NymiSplash.exe\" &");
 					const char *args[2];
 					args[0] = "C:\\Users\\Owner\\Documents\\GitHub\\nymi\\NymiSplash.exe";
 					args[1] = NULL;
