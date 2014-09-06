@@ -55,6 +55,8 @@ void callback(NclEvent event, void* userData){
             std::cout<<"Nymi validated! Now trusted user stuff can happen.\n";
             validatedUser=gHandle;
             break;
+        case NCL_EVENT_RSSI:
+        	std::cout<<event.rssi<<endl;
         default: break;
     }
 }
@@ -102,22 +104,30 @@ int main(int argc, const char* argv[]){
             std::cin>>input;
             if(input=="lock"){
                 std::cout<<"log: locking\n";
-                ///AMER PLS
+                ///lock
             }
             else if(input=="unlock"){
                 std::cout<<"log: unlocking\n";
-                ///AMER PLS
+                ///unlock
             }
-            int i;
+/*            int i;
             distance=0;
             for(i=0; i<10; i++){
-            	///get distance
+            	nclGetRssi(gHandle);
             }
             distance=distance/10;
             if(locked){
-
+            	if(distance>-30){
+            		std::cout<<"log: unlocking\n";
+            		///unlock
+            	}
             }
-            else
+            else{
+            	if(distance<-70){
+            		std::cout<<"log: locking\n";
+            		///lock
+            	}
+            }*/
         }
     }
     if(gHandle!=-1) nclDisconnect(gHandle);
